@@ -1,12 +1,13 @@
 ---
 title       : Gestão da Qualidade
 subtitle    : SME0666
-author      : Giovani C R, Diego M A e Fernando
-job         : quase estatísticos
+author      : Giovani
+job         : quase estatístico
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
 widgets     : [mathjax, quiz,bootstrap, shiny, interactive]            # {mathjax, quiz, bootstrap}
+ext_widgets: {rCharts: [libraries/nvd3]}
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 
@@ -61,14 +62,20 @@ OK $x^2_i$
 
 Let us create a simple scatterplot.
 
-```{r simple-plot, fig.height = 6, fig.align = 'center', message = F}
+```{r echo = F, simple-plot, fig.height = 6, fig.align = 'center', message = F}
 library(ggplot2)
 qplot(wt, mpg, data = mtcars)
 ```
 
 ---
+## Interactive Chart
 
-## that is my newest toy xD
+```{r echo = F, results = 'asis'}
 
-I'm ready for this.
-
+require(rCharts)
+haireye = as.data.frame(HairEyeColor)
+n1 <- nPlot(Freq ~ Hair, group = 'Eye', type = 'multiBarChart',
+  data = subset(haireye, Sex == 'Male')
+)
+n1$print('chart1')
+```
