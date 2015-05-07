@@ -6,7 +6,7 @@ job         : quase estatísticos
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
-widgets     : [mathjax, quiz,bootstrap]            # {mathjax, quiz, bootstrap}
+widgets     : [mathjax, quiz,bootstrap, shiny, interactive]            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 
@@ -45,5 +45,35 @@ sum(1:10)
 123
 ```
 
+--- .clas #id
 
+## slide 3
+
+
+
+OK $x^2_i$
+
+--- 
+
+ <iframe src = 'http://dillinger.io' height='600px'></iframe>
+
+--- .middle
+
+## scatterplot 
+
+Let us create a simple scatterplot.
+
+
+```r
+library(ggplot2)
+qplot(wt, mpg, data = mtcars)
+```
+
+<img src="assets/fig/simple-plot-1.png" title="plot of chunk simple-plot" alt="plot of chunk simple-plot" style="display: block; margin: auto;" />
+
+---
+
+## that is my newest toy xD
+
+I'm ready for this.
 
