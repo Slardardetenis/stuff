@@ -1,0 +1,49 @@
+---
+title       : Gestão da Qualidade
+subtitle    : SME0666
+author      : Giovani C R, Diego M A e Fernando
+job         : quase estatísticos
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : [mathjax, quiz,bootstrap]            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+
+---&radio
+
+
+## Question 1
+
+what is 1 + 1?
+
+1. 1
+
+2. _2_
+
+3. 3
+
+4. 4 
+
+*** .hint 
+que dica boa
+
+*** .explanation 
+É 2 pq é dois mesmo xD.
+
+---
+
+## Códigos R igual markdown
+
+
+```r
+sum(1:10)
+```
+
+[1] 55
+```
+123
+```
+
+
+
